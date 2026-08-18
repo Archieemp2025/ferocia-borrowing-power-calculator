@@ -5,6 +5,6 @@
   "scripts": {
     "api": "node server.js",
     "test": "mocha test_*.js",
-    "start": "node borrowingCalculator.js"
+    "start": "node cli.js"
   }
 }
