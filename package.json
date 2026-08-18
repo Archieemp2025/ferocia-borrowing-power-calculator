@@ -4,7 +4,7 @@
   },
   "scripts": {
     "api": "node server.js",
-    "test": "mocha test_calculator.js",
+    "test": "mocha test_*.js",
     "start": "node borrowingCalculator.js"
   }
 }
