@@ -65,10 +65,10 @@ curl -H "Authorization: Bearer pat_abcdefghijklmnopqrstuvwxyz0123456789" "http:/
 
 ## Error responses
 
-- `401 Unauthorized` — missing or invalid `Authorization` header token.
-- `400 Bad Request` — missing, malformed, or negative query parameters.
-- `404 Not Found` — endpoint path does not exist.
-- `405 Method Not Allowed` — only `GET` is supported.
+- `401 Unauthorized` - missing or invalid `Authorization` header token.
+- `400 Bad Request` - missing, malformed, or negative query parameters.
+- `404 Not Found` - endpoint path does not exist.
+- `405 Method Not Allowed` - only `GET` is supported.
 
 #### Example error payload
 
