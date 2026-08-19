@@ -226,23 +226,9 @@ flowchart LR
   the whole app.
 ## AI
  
-I used Claude throughout, mostly as something to think against rather than to
-generate code for me.
- 
-I used it early on to understand the domain, since I hadn't come across HEM or
-serviceability buffers before and wanted to know what the numbers meant before
-moving them around. I also used it to talk through the structural choice the
-exercise leaves open, and to understand why passing the rates client in mattered
-more than just splitting the files - the idea I'd have missed on my own.
- 
-I wrote the first version of `ratesClient.js` myself and asked for a review,
-which caught three real bugs: query parameters in the path as well as in the
-params object, `/api` missing from both endpoints, and no `module.exports`. I
-used it the same way to refine the rest as I went, and asked for line-by-line
-explanations afterwards so I understood each part rather than just accepting it.
- 
-I ran and checked everything myself: exploring the endpoints with curl before
-writing any client code, working out why the original tests broke once the
-calculation became async, and verifying the final numbers end to end against a
-live server.
+I used Claude as a thinking partner on this exercise. I started by understanding the domain, since I hadn't come across HEM or serviceability buffers before and wanted to know what the numbers meant before moving them around, and I used it to talk through the structural choice the exercise leaves open.
+
+I wrote the first version of `ratesClient.js` myself and asked for a review, which caught three real bugs: query parameters in the path as well as in the params object, `/api` missing from both endpoints, and no `module.exports`. I used it the same way as I worked through the rest, and asked for line-by-line explanations so I understood each part rather than just accepting it.
+
+The verification was all mine: exploring the endpoints with curl before writing any client code, working out why the original tests broke once the calculation became async, and checking the final numbers end to end against a live server.
  
